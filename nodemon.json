@@ -13,6 +13,6 @@
     "env": {
       "NODE_ENV": "development"
     },
-    "ext": "ts json sh bash",
+    "ext": "ts json sh bash html css js",
     "exec": "./build.sh && npm start"
   }

@@ -10,13 +10,13 @@ services:
     working_dir: /app
     entrypoint: "npm"
     command: ["run", "watch"]
-  #   depends_on: 
-  #     - elasticsearch
+    depends_on: 
+      - elasticsearch
 
-  # elasticsearch:
-  #   image: elasticsearch:7.6.1
-  #   ports:
-  #     - 9200:9200
-  #     - 9300:9300
-  #   environment:
-  #     - discovery.type=single-node
+  elasticsearch:
+    image: elasticsearch:7.6.1
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      - discovery.type=single-node

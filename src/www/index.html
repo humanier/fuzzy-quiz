@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample quiz with fuzzy matching of answers</title>
+</head>
+
+<style>
+    .buttons_set {
+        padding: 20px 10px 20px 10px;
+        text-align: center
+    }
+
+    button {
+        margin: 0 20px 0 20px
+    }
+
+    .answer_box {
+        width: 100%
+    }
+
+    .top_container {
+        width: 400px
+    }
+
+    .question_text {
+        padding: 20px 0 20px 0
+    }
+</style>
+
+<body>
+    <h1>Sample quiz</h1>
+    <div class="top_container">
+
+        <div id="question" class="question_text">Click "Next" to start</div>
+
+        <input type="text" class="answer_box" id="answer">
+
+        <div class="buttons_set">
+            <button id="checkButton" onclick="checkAnswer()">Check</button>
+            <button onclick="getNextQuestion()">Next</button>
+        </div>
+
+        <div id="result" class="check_result"></div>
+    </div>
+</body>
+
+<script src="scripts/ui.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+</html>
