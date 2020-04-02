@@ -1,0 +1,9 @@
+- UI
+    - display first question
+    - "SUBMIT" button which matches user input with answer
+    - "NEXT" button to proceed to the next question    
+- Backend
+    - endpoint to get question text by id 
+    - endpoint to match user input with recorded answer
+- Database (Elasticsearch)
+    - script to init and seed index 
