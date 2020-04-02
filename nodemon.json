@@ -1,0 +1,18 @@
+{
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules",
+      "dist",
+      "todo",
+      ".vcode"
+    ],
+    "verbose": true,
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "ts json sh bash",
+    "exec": "./build.sh && npm start"
+  }

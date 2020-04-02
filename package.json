@@ -1,0 +1,33 @@
+{
+  "name": "fuzzy-quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --recursive src/test",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanier/fuzzy-quiz.git"
+  },
+  "author": "Oleg Kulakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/humanier/fuzzy-quiz/issues"
+  },
+  "homepage": "https://github.com/humanier/fuzzy-quiz#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.4",
+    "@types/node": "^13.11.0",
+    "nodemon": "^2.0.2",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  }
+}
