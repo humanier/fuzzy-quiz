@@ -10,6 +10,7 @@ import bodyParser from 'body-parser';
 const app: express.Application = express();
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 const staticContentOptions = {
     dotfiles: 'ignore',

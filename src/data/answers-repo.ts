@@ -41,7 +41,7 @@ function buildSearchJson(questionId: number, answer: string) {
                                 "query": answer,
                                 "operator": "AND",
                                 "fuzziness": 2,
-                                "prefix_length": 3
+                                "prefix_length": 1
                             }
                         }
                     },
