@@ -35,10 +35,10 @@
 
         <div id="question" class="question_text">Click "Next" to start</div>
 
-        <input type="text" class="answer_box" id="answer">
+        <input type="text" class="answer_box" id="answer" disabled>
 
         <div class="buttons_set">
-            <button id="checkButton" onclick="checkAnswer()">Check</button>
+            <button id="checkButton" onclick="checkAnswer()" disabled>Check</button>
             <button onclick="getNextQuestion()">Next</button>
         </div>
 
@@ -46,9 +46,9 @@
     </div>
 </body>
 
-<script src="scripts/ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+<script src="scripts/ui.js"></script>
 
 </html>
