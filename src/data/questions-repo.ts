@@ -9,8 +9,8 @@ const questions = new Map();
 ].forEach(q => questions.set(q.id, q));
 
 export const questionsRepo = {
-    all(): Question[] {
-        return []
+    all(): IterableIterator<Question> {
+        return questions.values();
     },
 
     getById(id: number): Question {

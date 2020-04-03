@@ -6,7 +6,7 @@
       "todo",
       ".vcode"
     ],
-    "verbose": true,
+    "verbose": false,
     "execMap": {
       "js": "node --harmony"
     },
@@ -14,5 +14,5 @@
       "NODE_ENV": "development"
     },
     "ext": "ts json sh bash html css js",
-    "exec": "./build.sh && npm start"
+    "exec": "./build.sh && npm run debug"
   }
